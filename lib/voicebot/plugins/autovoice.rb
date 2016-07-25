@@ -164,7 +164,8 @@ module VoiceBot
       end
 
       def on_kick(m, user)
-        remove(user, m.channel) if find(user, m.channel)
+        kicked = User(m.params[1])
+        remove(kicked, m.channel) if find(kicked, m.channel)
       end
 
       def on_part(m)
