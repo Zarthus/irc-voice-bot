@@ -92,7 +92,8 @@ module VoiceBot
     def execute(bot)
       return unless count != 0
 
-      modes = parse false
+      modes = parse(false)
+      empty
 
       if modes
         modes.each do |perform|
@@ -100,8 +101,6 @@ module VoiceBot
           sleep(0.5)
         end
       end
-
-      empty
     end
 
     def valid?(str)
