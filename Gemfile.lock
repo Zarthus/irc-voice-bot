@@ -9,7 +9,7 @@ GEM
       ast (~> 2.2)
     powerpack (0.1.1)
     rainbow (2.1.0)
-    rake (11.1.2)
+    rake (12.3.3)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -33,6 +33,7 @@ GEM
     unicode-display_width (1.0.3)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
